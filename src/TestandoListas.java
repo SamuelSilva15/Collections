@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Array {
+public class TestandoListas {
     public static void main(String[] args) {
         //aprendendo arraylist
        String aula1 = "Conhecendo mais de listas";
