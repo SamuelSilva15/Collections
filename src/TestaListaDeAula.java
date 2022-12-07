@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class TestaListaDeAula {
 
@@ -22,5 +23,7 @@ public class TestaListaDeAula {
 
         //depois de ordenar:
         System.out.println(aulas);
+
+        aulas.sort(Comparator.comparing(Aula::getTempo));
     }
 }
