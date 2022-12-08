@@ -1,6 +1,4 @@
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class Curso {
 
@@ -37,5 +35,15 @@ public class Curso {
     public String toString() {
         return "[Curso: " + this.getNome() + ", tempo total: " + this.getTempoTotal()
                 + ", aulas: + " + this.aulas + "]";
+    }
+
+    private Set<Aluno> alunos = new HashSet<>();
+
+    public void matricula(Aluno aluno){
+        this.alunos.add(aluno);
+    }
+
+    public Set<Aluno> getAlunos() {
+        return Collections.unmodifiableSet(alunos);
     }
 }
